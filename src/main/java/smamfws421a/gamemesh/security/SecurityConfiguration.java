@@ -18,6 +18,9 @@ import smamfws421a.gamemesh.views.LoginView;
 public class SecurityConfiguration
         extends VaadinWebSecurity {
 
+    //large chunk of this code is taken from vaadin website cuz I'm too mentally unstable to bother with authentication rn
+    //skill issue jgl diff
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         // Delegating the responsibility of general configurations
