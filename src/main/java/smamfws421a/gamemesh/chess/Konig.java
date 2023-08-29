@@ -1,6 +1,4 @@
-package Chess.Game;
-
-import java.awt.image.BufferedImage;
+package smamfws421a.gamemesh.chess;
 
 public class Konig extends Figur{
     private boolean color = false;
@@ -17,7 +15,7 @@ public class Konig extends Figur{
     }
 
     @Override
-    public BufferedImage getImage() {
+    public String getImage() {
         if (getColor()){
             return ImageLoader.FigurW[5];
         }else {

@@ -1,6 +1,4 @@
-package Chess.Game;
-
-import java.awt.image.BufferedImage;
+package smamfws421a.gamemesh.chess;
 
 public abstract class Figur {
 
@@ -29,13 +27,13 @@ public abstract class Figur {
         return this.boardpos;
     }
 
-    public BufferedImage getImage(){
+    public String getImage(){
         return null;
     }
     public void setFirstMove(boolean firstMove){
         this.firstmove = firstMove;
     }
-    public boolean[][] Attack(Feld feld,int x, int y){
+    public boolean[][] Attack(Feld feld, int x, int y){
         return Bewegung(feld);
     }
 }

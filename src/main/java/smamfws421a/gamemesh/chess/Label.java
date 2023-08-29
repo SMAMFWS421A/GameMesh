@@ -1,4 +1,4 @@
-package Chess.Game;
+package smamfws421a.gamemesh.chess;
 
 import javax.swing.*;
 import java.awt.*;
@@ -48,10 +48,10 @@ public class Label extends JLabel {
                 if (Feld.playingBoard[i][j] != null) {
                     if (Feld.playingBoard[i][j].getAllowed() && Feld.playingBoard[i][j].isOccupied()){
                         g.setColor(Color.RED);
-                        g.drawImage(Feld.playingBoard[i][j].occupied.getImage(), (i + 5) * 100, (j + 1) * 100, 100, 100, null);
+                        //g.drawImage(Feld.playingBoard[i][j].occupied.getImage(), (i + 5) * 100, (j + 1) * 100, 100, 100, null);
                         g.fillOval((i + 5) * 100 + 25,(j + 1) * 100 + 25,50,50);
                     }else if (Feld.playingBoard[i][j].isOccupied()) {
-                            g.drawImage(Feld.playingBoard[i][j].occupied.getImage(), (i + 5) * 100, (j + 1) * 100, 100, 100, null);
+                            //g.drawImage(Feld.playingBoard[i][j].occupied.getImage(), (i + 5) * 100, (j + 1) * 100, 100, 100, null);
                     }else if (Feld.playingBoard[i][j].getAllowed() &&!Feld.playingBoard[i][j].isOccupied()){
                         g.setColor(Color.GREEN);
                         g.fillOval((i + 5) * 100 + 25,(j + 1) * 100 + 25,50,50);

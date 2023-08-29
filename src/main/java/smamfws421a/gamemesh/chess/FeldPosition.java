@@ -1,4 +1,4 @@
-package Chess.Game;
+package smamfws421a.gamemesh.chess;
 
 public class FeldPosition {
 

@@ -1,4 +1,4 @@
-package Chess.Game;
+package smamfws421a.gamemesh.chess;
 
 public class SpielFeld {
 
@@ -11,7 +11,7 @@ public class SpielFeld {
     private boolean allowed;
     private boolean[][][] attacked = new boolean[2][8][8]; //White = 0 => von Weiß angegriffen 2. & 3. []: Koordinaten von Angreifer
 
-    public SpielFeld(boolean color, FeldPosition coordinate,int FeldLängeX, int FeldLängeY){
+    public SpielFeld(boolean color, FeldPosition coordinate, int FeldLängeX, int FeldLängeY){
         this.color = color;
         this.active = active;
         this.allowed = allowed;

@@ -1,6 +1,4 @@
-package Chess.Game;
-
-import Hauptmenü.GuiH;
+package smamfws421a.gamemesh.chess;
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,15 +30,6 @@ public class Gui {
         btnreset.setForeground(Color.WHITE);
         jf.add(btnreset);
 
-        btnreturn = new JButton("Zurück");
-        btnreturn.addActionListener(e -> zurück());
-        btnreturn.setBounds(100,100,100,50);
-        btnreturn.setVisible(true);
-        btnreturn.setFocusPainted(true);
-        btnreturn.setBackground(new Color(51, 102, 153));
-        btnreturn.setForeground(Color.WHITE);
-        jf.add(btnreturn);
-
         jlb = new Label();
         jlb.setBounds(0,0,Width,Height);
         jlb.setVisible(true);
@@ -50,13 +39,7 @@ public class Gui {
 
         jf.setVisible(true);
     }
-    public static void zurück(){
-        Feld x = new Feld(8,8);
-        x.reset();
-        jf.dispose();
-        GuiH a = new GuiH();
-        a.create();
-    }
+
     public static void reset(){
         Feld x = new Feld(8,8);
         x.reset();
